@@ -40,12 +40,6 @@ module "sql_db" {
 }
 
 
+#
 
-module "pip" {
-  source   = "../../modules/azurerm_public_ip"
-  pip_name = "pip-dev-todoapp"
-  rg_name  = "prod-rg"
-  location = "East US"
-  sku      = "Standard"
-  tags     = local.common_tags
-}
+
